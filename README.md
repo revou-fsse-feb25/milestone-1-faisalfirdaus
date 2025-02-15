@@ -11,10 +11,18 @@ This is a simple personal website designed to showcase a professional portfolio,
 - About Me Section: A detailed description of the owner, including an option to download the CV.
 - Portfolio Section: Displays the latest projects with descriptions and images.
 - Contact Section:
-- - A contact form for users to send messages.
-- - Address, phone number, and email information with relevant icons.
+  - A contact form for users to send messages.
+  - Address, phone number, and email information with relevant icons.
 - Footer: Includes social media icons and copyright information.
 
 ## Technologies Used
 
 1. HTML5: For structuring the webpage with semantic elements.
+
+## How to access
+
+```sh
+    git clone https://github.com/revou-fsse-feb25/milestone-1-faisalfirdaus.git
+    cd milestone-1-faisalfirdaus
+    code index.html
+```
