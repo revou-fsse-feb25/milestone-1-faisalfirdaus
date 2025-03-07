@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Icons+Outlined&family=Material+Icons+Round&family=Material+Icons+Sharp&family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#hero">Personal Website</a>
-        <ul>
+      <nav class="nav-container">
+        <a class="logo" href="#hero">Faisal Firdaus</a>
+        <!-- <i class="header-bar fa-solid fa-bars"></i> -->
+        <ul class="navbar">
           <li><a href="#about">About Me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact Me</a></li>
@@ -19,157 +32,291 @@
     </header>
 
     <main>
-      <section id="hero">
-        <img width="400px" src="asset/img/no-photo.jpg" alt="picture" />
-        <article>
-          <h1>Hello i'm Faisal</h1>
-          <p>
-            Food ipsum dolor amet ground round tri-tip cucumber <br />
-            spicesCauliflower kielbasa.
-          </p>
-          <button type="button">Hire me</button>
-        </article>
+      <section id="hero" class="hero-section">
+        <div class="container grid-container">
+          <div class="section-title">
+            <article>
+              <h1 class="heading-primary mmarginb-small">Hello I'm Faisal</h1>
+              <p class="marginb-small">
+                Food ipsum dolor amet ground round tri-tip cucumber spices
+                Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger.
+              </p>
+              <button class="btn" type="button">Hire me</button>
+            </article>
+          </div>
+          <div class="image-container">
+            <img src="asset/img/hero-img.svg" alt="picture" />
+          </div>
+        </div>
       </section>
 
       <section id="about">
-        <img
-          width="400px"
-          class="about-me-img"
-          src="asset/img/no-photo.jpg"
-          alt="picture"
-        />
-        <article class="about-me-txt">
-          <h2>About me</h2>
-          <h3>I am faisal firdaus</h3>
-          <p>
-            Food ipsum dolor amet ground round tri-tip cucumber spices <br />
-            Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger. Pork loin
-            <br />
-            ham hock Asparagus flank tenderloin Spaghetti Squash drumstick
-            <br />
-            corned beef Spinach. Ground round Onions Okra, Kimchi venison <br />
-            oregano turkey Collard Greens Rutabaga short loin Potatoes.
-          </p>
-          <button type="button">Download CV</button>
-        </article>
+        <div class="container grid-container">
+          <div class="image-container">
+            <img src="asset/img/about-img.svg" alt="picture" />
+          </div>
+          <div class="section-title">
+            <article class="about-me-txt">
+              <h2 class="pre-heading marginb-xs">About me</h2>
+              <h3 class="heading-primary marginb-small">I am Faisal Firdaus</h3>
+              <p class="marginb-small">
+                Food ipsum dolor amet ground round tri-tip cucumber spices
+                Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger. Pork
+                loin ham hock Asparagus flank tenderloin Spaghetti Squash
+                drumstick corned beef Spinach. Ground round Onions Okra, Kimchi
+                venison oregano turkey Collard Greens Rutabaga short loin
+                Potatoes.
+              </p>
+              <button class="btn" type="button">Download CV</button>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section id="portfolio">
-        <h2>Portfolio</h2>
-        <h3>Latest Project</h3>
-        <p>
-          Food ipsum dolor amet ground round tri-tip cucumber spices Cauliflower
-          kielbasa. Pumpkin pancetta bresaola hamburger.
-        </p>
-        <div id="portfolio-container">
-          <div class="container">
-            <img width="400px" src="asset/img/no-photo.jpg" alt="picture" />
-            <h3>project 1</h3>
-            <p>
-              Food ipsum dolor amet ground round tri-tip cucumber spices <br />
-              Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger. Pork
-              loin
-              <br />
-              ham hock Asparagus flank tenderloin Spaghetti Squash drumstick
-              <br />
-              corned beef Spinach. Ground round Onions Okra, Kimchi venison
-              <br />
-              oregano turkey Collard Greens Rutabaga short loin Potatoes.
-            </p>
-            <button type="button">check</button>
+        <div class="portfolio-container container">
+          <div class="portfolio-title marginb-medium">
+            <h2 class="pre-heading marginb-xs">My Portfolio</h2>
+            <h3 class="heading-primary marginb-small">Latest Project</h3>
           </div>
-          <div class="container">
-            <img width="400px" src="asset/img/no-photo.jpg" alt="picture" />
-            <h3>project 1</h3>
-            <p>
-              Food ipsum dolor amet ground round tri-tip cucumber spices <br />
-              Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger. Pork
-              loin
-              <br />
-              ham hock Asparagus flank tenderloin Spaghetti Squash drumstick
-              <br />
-              corned beef Spinach. Ground round Onions Okra, Kimchi venison
-              <br />
-              oregano turkey Collard Greens Rutabaga short loin Potatoes.
-            </p>
-            <button type="button">check</button>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="card-cover">
+                <img src="asset/img/tokopedia.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-title">
+                  <h4>Project 1</h4>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"
+                      >open_in_new</span
+                    ></a
+                  >
+                </div>
+                <div class="card-tags">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                  <div>JavaScript</div>
+                </div>
+                <p>
+                  Food ipsum dolor amet ground round tri-tip cucumber spices
+                  Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger.
+                  Pork loin ham hock Asparagus flank tenderloin Spaghetti Squash
+                  drumstick corned beef Spinach.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-cover">
+                <img src="asset/img/shopee.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-title">
+                  <h4>Project 2</h4>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"
+                      >open_in_new</span
+                    ></a
+                  >
+                </div>
+                <div class="card-tags">
+                  <div>Python</div>
+                  <div>NodeJS</div>
+                </div>
+                <p>
+                  Food ipsum dolor amet ground round tri-tip cucumber spices
+                  Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger.
+                  Pork loin ham hock Asparagus flank tenderloin Spaghetti Squash
+                  drumstick corned beef Spinach.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-cover">
+                <img src="asset/img/netflix.png" alt="" />
+              </div>
+              <div class="card-info">
+                <div class="card-title">
+                  <h4>Project 3</h4>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"
+                      >open_in_new</span
+                    ></a
+                  >
+                </div>
+                <div class="card-tags">
+                  <div>React</div>
+                  <div>NestJS</div>
+                </div>
+                <p>
+                  Food ipsum dolor amet ground round tri-tip cucumber spices
+                  Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger.
+                  Pork loin ham hock Asparagus flank tenderloin Spaghetti Squash
+                  drumstick corned beef Spinach.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <img width="400px" src="asset/img/no-photo.jpg" alt="picture" />
-            <h3>project 1</h3>
-            <p>
-              Food ipsum dolor amet ground round tri-tip cucumber spices <br />
-              Cauliflower kielbasa. Pumpkin pancetta bresaola hamburger. Pork
-              loin
-              <br />
-              ham hock Asparagus flank tenderloin Spaghetti Squash drumstick
-              <br />
-              corned beef Spinach. Ground round Onions Okra, Kimchi venison
-              <br />
-              oregano turkey Collard Greens Rutabaga short loin Potatoes.
-            </p>
-            <button type="button">check</button>
+
+          <div class="porto-grid-container">
+            <div class="item grid-item-1">
+              <div class="item-text">
+                <h3>Project 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, cumque?
+                </p>
+                <a class="btn-text" href="">Read more &rarr;</a>
+              </div>
+            </div>
+            <div class="item grid-item-2">
+              <div class="item-text">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <a class="btn-text" href="">Read more &rarr;</a>
+              </div>
+            </div>
+            <div class="item grid-item-3">
+              <div class="item-text">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit, consectetur adi.</p>
+                <a class="btn-text" href="">Read more &rarr;</a>
+              </div>
+            </div>
+            <div class="item grid-item-4">
+              <div class="item-text">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet consec.</p>
+                <a class="btn-text" href="">Read more &rarr;</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="contact">
-        <form action="/" method="POST">
-          <label for="name">Name:</label><br />
-          <input type="text" name="name" id="name" /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" name="email" id="email" /><br />
-          <label for="message">Message</label><br />
-          <textarea name="message" id="message"></textarea>
-          <br />
-          <button type="submit">Submit message</button>
-        </form>
-
-        <section class="address">
-          <h2>Contact Me</h2>
-          <address>
-            <img width="50px" src="asset/img/no-photo.jpg" alt="picture" />
-            <p>Address:</p>
-            <p>jl. apa aja no.1, kec. bebas, jawa selatan</p>
-          </address>
-          <div>
-            <img width="50px" src="asset/img/no-photo.jpg" alt="picture" />
-            <p>Phone:</p>
-            <p>+666 8123439137</p>
+        <div class="container grid-container">
+          <div class="image-container form-container">
+            <form class="form" action="#" method="POST">
+              <div class="input-box">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="First and last name"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="example@emaill.com"
+                  required
+                />
+              </div>
+              <div class="text-area marginb-small">
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button class="form-btn" type="submit">Send message</button>
+            </form>
           </div>
-          <div>
-            <img width="50px" src="asset/img/no-photo.jpg" alt="picture" />
-            <p>email:</p>
-            <a href="">ujangpanto@mailg.com</a>
+          <div class="address-container">
+            <div class="section-title">
+              <h3 class="pre-heading marginb-xs">Get in Touch</h3>
+              <h2 class="heading-primary">Contact Me</h2>
+            </div>
+            <address class="address-item">
+              <div class="address-icon">
+                <span class="material-icons-round"> pin_drop </span>
+              </div>
+              <div class="address-detail">
+                <p><strong>Address:</strong></p>
+                <p>Jl. Apa aja No.1, Kec. Mana ya, Jawa bukan ya</p>
+              </div>
+            </address>
+            <div class="address-item">
+              <div class="address-icon">
+                <span class="material-icons-round">call</span>
+              </div>
+              <div class="address-detail">
+                <p><strong>Phone:</strong></p>
+                <p>+666 8123439137</p>
+              </div>
+            </div>
+            <div class="address-item">
+              <div class="address-icon">
+                <span class="material-icons-round">mail</span>
+              </div>
+              <div class="address-detail">
+                <p><strong>Email:</strong></p>
+                <a href="">ujangpanto@mailg.com</a>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
       </section>
     </main>
 
     <footer>
-      <ul type="none">
-        <li>
-          <a href=""
-            ><img width="50px" src="asset/img/no-photo.jpg" alt="picture"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img width="50px" src="asset/no-photo.jpg" alt="picture"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img width="50px" src="asset/no-photo.jpg" alt="picture"
-          /></a>
-        </li>
-        <li>
-          <a href=""
-            ><img width="50px" src="asset/no-photo.jpg" alt="picture"
-          /></a>
-        </li>
-      </ul>
-      <p>&copy; 2025 begadanggatidur.com</p>
+      <div class="container">
+        <div class="footer-container">
+          <div class="">
+            <h2 class="footer-logo">Faisal Firdaus</h2>
+            <nav>
+              <ul class="footer-nav">
+                <li><a class="btn-footer" href="#">Home</a></li>
+                <li><a class="btn-footer" href="#">About</a></li>
+                <li><a class="btn-footer" href="#">Portfolio</a></li>
+                <li><a class="btn-footer" href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h3 class="footer-sub-logo">Services</h3>
+            <ul class="services">
+              <li><a class="btn-footer" href="">Web Development</a></li>
+              <li><a class="btn-footer" href="">Mobile Development</a></li>
+              <li><a class="btn-footer" href="">App Development</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-sub-logo">Contact Me</h3>
+            <p class="">+666 8123439137</p>
+            <p>ujangpanto@mailg.com</p>
+            <p>Jl. Mana ya No.192</p>
+            <p>Bandung</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-icon">
+            <a href="#"
+              ><i class="fa-brands fa-instagram footer-icon-item"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-square-facebook footer-icon-item"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-square-x-twitter footer-icon-item"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-github footer-icon-item"></i></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin footer-icon-item"></i
+            ></a>
+          </div>
+          <p>&copy; 2025 Faisal Firdaus. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
