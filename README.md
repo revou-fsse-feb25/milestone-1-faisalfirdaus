@@ -4,6 +4,8 @@
 
 This is a personal portfolio website designed to showcase My professional profile, projects, and contact information. The website provides a comprehensive view of the developer's skills, expertise, and recent work, serving as a digital resume and professional showcase.
 
+web preview: https://revou-fsse-feb25.github.io/milestone-1-faisalfirdaus/
+
 ## Features Implemented
 
 - Navigation Bar: Provides easy access to different sections of the website.
